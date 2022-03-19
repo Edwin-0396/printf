@@ -7,5 +7,5 @@
 
 char _count(const char s1)
 {
-	
+
 }
