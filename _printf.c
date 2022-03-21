@@ -7,6 +7,6 @@
 
 int _printf(const char *format, ...)
 {
-  _count(format);
+  _count(format, ...);
   return (0);
 }
