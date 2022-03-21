@@ -7,7 +7,7 @@
  * Return: length
  */
 
-char *_equal(const char *s, char *str, int length)
+char *_equal(const char *s, char *str, int length, ...)
 {
 	int i;
 
@@ -15,6 +15,8 @@ char *_equal(const char *s, char *str, int length)
 	{
 		str[i] = s[i];
 		_putchar(str[i]);
+		if (s[i] == '%')
+			return (_parameter(s, i + 1, ...));
 	}
 
 	str[i] = _putchar('\n');
