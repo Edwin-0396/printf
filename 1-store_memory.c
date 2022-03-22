@@ -7,7 +7,7 @@
  * Return: length
  */
 
-char *_store_memory(const char *s, int length, ...)
+char *_store_memory(const char *s, int length)
 {
 	char *str;
 
@@ -15,5 +15,5 @@ char *_store_memory(const char *s, int length, ...)
 	if(!str)
 		return (NULL);
 	
-	return (_equal (s, str, length, ...));
+	return (_equal (s, str, length));
 }
