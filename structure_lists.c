@@ -1,20 +1,7 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
-/**
- * specifics_c - print a simple character
+ * print_c - print a simple character
  * @arg: pointer to list arguments
  *
  * Return: 0
@@ -22,12 +9,12 @@ int _putchar(char c)
 
 int print_c(va_list arg)
 {
-  _putchar(va_arg(arg, int));
-  return (0);
+	_putchar(va_arg(arg, int));
+	return (0);
 }
 
 /**
- * print_c - print a simple string
+ * print_s - print a simple string
  * @arg: pointer to list arguments
  *
  * Return: 0
@@ -41,7 +28,7 @@ int print_s(va_list arg)
 	if (!str)
 		return (0);
 
-	for(; str[length]; length++)
+	for (; str[length]; length++)
 		_putchar(str[length]);
 
 	return (0);
@@ -56,8 +43,8 @@ int print_s(va_list arg)
 
 int print_pc(va_list arg)
 {
-	_putchar(va_arg(arg, char *));
-	return (0);
+	(void)arg;
+	return (_putchar('%'));
 }
 
 /**
@@ -76,7 +63,7 @@ int print_i(va_list arg)
 		_putchar('-');
 		a = -a;
 	}
-	
+
 	if (a / 10 != 0)
 		_putchar((a / 10) + '0');
 
@@ -94,7 +81,7 @@ int print_i(va_list arg)
 int print_d(va_list arg)
 {
 	int number;
-	unsigned int posivite, size_d, obs_size_d = 1, store = 0;
+	unsigned int positive, size_d, obs_size_d = 1, store = 0;
 
 	number = va_arg(arg, int);
 
@@ -112,7 +99,7 @@ int print_d(va_list arg)
 		size_d = size_d / 10;
 		obs_size_d = obs_size_d * 10;
 	}
-	while(obs_size_d >= 1)
+	while (obs_size_d >= 1)
 	{
 		store = store + _putchar(((positive / obs_size_d) % 10) + '0');
 		obs_size_d = obs_size_d / 10;
