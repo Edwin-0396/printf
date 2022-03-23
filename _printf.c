@@ -33,8 +33,6 @@ int _printf(const char *format, ...)
 				f = get_function(&format[count]);
 				put = put + f(arg);
 			}
-			if (format[count] == '\0')
-				put++;
 		}
 		else
 		{
