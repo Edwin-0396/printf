@@ -12,10 +12,11 @@ int main(void)
   char str[] = "where str is a big string\n";
 
 
-  _printf("Let's print a simple sentence.\n");
+  printf("%d", _printf("Let's print a simple sentence.\n"));
+  printf("%d", printf("Let's print a simple sentence.\n"));
   printf("Let's print a simple sentence.\n");
-  _printf("%c\n", 'S');
-  printf("%c\n", 'S');
+  printf("%d: ", printf("%c\n", 'S'));
+  printf("%d: ", _printf("%c\n", 'S'));
   _printf("A char inside a sentence: %c. Did it work?\n", 'F');
   printf("A char inside a sentence: %c. Did it work?\n", 'F');
   _printf("Let'see if the cast is correctly done: %c. Did it work?\n", 48);

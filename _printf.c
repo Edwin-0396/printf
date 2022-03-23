@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	va_list arg;
-	unsigned int count;
+	unsigned int count = 0, put = 0;
 	int (*f)(va_list);
 
 	if (!format || !*format)
@@ -27,17 +27,22 @@ int _printf(const char *format, ...)
 			{
 				_putchar(format[count - 1]);
 				_putchar(format[count]);
+				put++;
 			}
 
 			else
 			{
 				f = get_function(&format[count]);
 				f(arg);
+				put++;
 			}
 		}
 		else
+		{
 			_putchar(format[count]);
+			put++;
+		}
 	}
 	va_end(arg);
-	return (count);
+	return (put);
 }

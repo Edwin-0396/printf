@@ -24,5 +24,5 @@ int (*get_function(const char *format))(va_list)
 			return (type[counter].f);
 	}
 
-	return (0);
+	return (NULL);
 }

@@ -56,19 +56,10 @@ int print_pc(va_list arg)
 
 int print_i(va_list arg)
 {
-	int a = va_arg(arg, int);
+	int size = 0;
 
-	if (a < 0)
-	{
-		_putchar('-');
-		a = -a;
-	}
-
-	if (a / 10 != 0)
-		_putchar((a / 10) + '0');
-
-	_putchar((a % 10) + '0');
-	return (0);
+	size = print_d(arg);
+	return (size);
 }
 
 /**
