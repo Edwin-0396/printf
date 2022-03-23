@@ -71,8 +71,8 @@ int print_i(va_list arg)
 
 int print_d(va_list arg)
 {
-	int number;
-	unsigned int positive, size_d, obs_size_d = 1, store = 0;
+	int number, store = 0;
+	unsigned int positive, size_d, obs_size_d = 1;
 
 	number = va_arg(arg, int);
 
