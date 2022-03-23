@@ -33,8 +33,7 @@ int _printf(const char *format, ...)
 			else
 			{
 				f = get_function(&format[count]);
-				f(arg);
-				put++;
+				put = put + f(arg);
 			}
 		}
 		else
