@@ -11,7 +11,6 @@ int main(void)
 {
   char str[] = "where str is a big string\n";
 
-
   printf("%d", _printf("Let's print a simple sentence.\n"));
   printf("%d", printf("Let's print a simple sentence.\n"));
   printf("Let's print a simple sentence.\n");
@@ -47,9 +46,12 @@ int main(void)
   printf("%\n");
   _printf("%!\n");
   printf("%!\n");
+
+  printf("%");
+  _printf("%");
+  
   _printf("%K\n");
   printf("%K\n");
-
   _printf(NULL);
   return (0);
 }
