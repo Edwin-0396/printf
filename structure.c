@@ -14,8 +14,8 @@ int (*get_function(const char *format))(va_list)
 		{"s", print_s},
 		{"%", print_pc},
 		{"d", print_d},
-		{"i", print_i},
-		{"\0", NULL}};
+		{"i", print_d},
+		{NULL, NULL}};
 	int counter = 0;
 
 	for (; type[counter].c; counter++)
