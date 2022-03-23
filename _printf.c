@@ -27,11 +27,10 @@ int _printf(const char *format, ...)
 			{
 				if (format[count - 1] == '%' && format[count] == '\0')
 					return (-1);
-				else
-				{
+
 				put = put + _putchar(format[count - 1]);
 				put = put + _putchar(format[count]);
-				}			
+
 			}
 			else
 			{
