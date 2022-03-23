@@ -31,7 +31,7 @@ int print_s(va_list arg)
 	for (; str[length]; length++)
 		_putchar(str[length]);
 
-	return (0);
+	return (length);
 }
 
 /**
@@ -44,7 +44,7 @@ int print_s(va_list arg)
 int print_pc(va_list arg)
 {
 	(void)arg;
-	return (_putchar('%'));
+	return (write(1, "%", 1));
 }
 
 /**
