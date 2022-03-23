@@ -9,21 +9,20 @@
 
 int (*get_function(const char *format))(va_list)
 {
-	print type[] = {
-		{'c', print_c},
-		{'s', print_s},
-		{'%', print_pc},
-		{'d', print_d},
-		{'i', print_i},
-		{'\0', NULL}
-	};
+	checker type[] = {
+		{"c", print_c},
+		{"s", print_s},
+		{"%", print_pc},
+		{"d", print_d},
+		{"i", print_i},
+		{"\0", NULL}};
 	int counter = 0;
 
 	for (; type[counter].c; counter++)
 	{
-		if (*format == type[counter].c)
+		if (*format == *(type[counter].c))
 			return (type[counter].f);
 	}
-	
+
 	return (0);
 }
