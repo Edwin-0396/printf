@@ -28,10 +28,9 @@ int _printf(const char *format, ...)
 				put = put + _putchar(format[count - 1]);
 				put = put + _putchar(format[count]);
 			}
-
 			else
 			{
-				f = get_function(&format[count]);
+				f = get_function(&format[count - 1]);
 				put = put + f(arg);
 			}
 		}
