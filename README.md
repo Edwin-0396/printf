@@ -127,7 +127,8 @@ writes the character c to standard output
 ___
 
 ## Examples
-To print a character:
+
+        To print a character:
 
            #include "main.h"
 
@@ -149,9 +150,9 @@ To print a character:
 
            int day = 24, moth = 3, year = 2022;
 
-           _printf("The date is %i/%d/%i",
-                                day, moth, year);
+           _printf("The date is %i/%d/%i", day, moth, year);
 ```
+
 
 ## Examples
 ##### Leonardo Cumaco
