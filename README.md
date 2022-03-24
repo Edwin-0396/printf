@@ -153,8 +153,8 @@ To print a character:
                                 day, moth, year);
 ```
 
-## Author
-##### Leonardo Cumaco
+##Author
+#####Leonardo Cumaco
 Holberton School, Cohort 17
-##### Edwin Gaviria
+#####Edwin Gaviria
 Holberton School, Cohort 17
