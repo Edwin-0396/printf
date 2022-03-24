@@ -74,11 +74,16 @@ The conversion specifier is a letter that specifies the type of conversion to be
                 print digit for digit and return the complex num, and writing this
                 in the console.
 
-**c:**	   character to be provided for printing
+**c:**      The char character, its print when in the variable get alone a
+                character, this character are print in console in the assigment
+                position.
 
-**s:**	...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
+**s:**      The char string, get the string and print all characters into,
+                Characters from the array are written up to (but not including)
+                a terminating null byte ('\0').
 
-**%:**	    A per cent sign '%' is written. No argument is converted.
+**%:**	    A '%' is written.  No argument is converted.  The complete
+                conversion specification is '%%'.
 
 
 **Return value:**
