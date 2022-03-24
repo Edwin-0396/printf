@@ -126,6 +126,12 @@ ___
 writes the character c to standard output
 ___
 
+
+## Authors
+[Alexa Orrico](https://github.com/alexaorrico) | [@alexa_orrico](https://twitter.com/alexa_orrico)
+
+[Daniel Ojeda](https://github.com/Danielo814) | [@DanielC_Ojeda](https://twitter.com/DanielC_Ojeda)
+
 ## Examples
 
         To print a character:
@@ -153,7 +159,3 @@ ___
            _printf("The date is %i/%d/%i", day, moth, year);
 ```
 
-## Authors
-[Alexa Orrico](https://github.com/alexaorrico) | [@alexa_orrico](https://twitter.com/alexa_orrico)
-
-[Daniel Ojeda](https://github.com/Danielo814) | [@DanielC_Ojeda](https://twitter.com/DanielC_Ojeda)
