@@ -153,9 +153,7 @@ ___
            _printf("The date is %i/%d/%i", day, moth, year);
 ```
 
+## Authors
+[Alexa Orrico](https://github.com/alexaorrico) | [@alexa_orrico](https://twitter.com/alexa_orrico)
 
-## Examples
-##### Leonardo Cumaco
-Holberton School, Cohort 17
-##### Edwin Gaviria
-Holberton School, Cohort 17
+[Daniel Ojeda](https://github.com/Danielo814) | [@DanielC_Ojeda](https://twitter.com/DanielC_Ojeda)
