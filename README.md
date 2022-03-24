@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="409" height="128" src="https://www.holbertonschool.com/holberton-logo.png">
+  <img width="409" height="128" src="https://www.maizure.org/projects/printf/fig0.png">
 </p>
 
 # Printf() implementation.
