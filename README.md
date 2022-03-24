@@ -151,10 +151,10 @@ ___
 
            int day = 24, moth = 3, year = 2022;
 
-           _printf("The date is %i/%d/%i", day, moth, year); ´´´
+           _printf("The date is %i/%d/%i", day, moth, year);
 
 ## Authors
-[Alexa Orrico](https://github.com/alexaorrico) | [@alexa_orrico](https://twitter.com/alexa_orrico)
+[Edwin Gaviria Cardenas](https://github.com/Edwin-0396) | [@egc4611](https://twitter.com/EGC4611)
 
-[Daniel Ojeda](https://github.com/Danielo814) | [@DanielC_Ojeda](https://twitter.com/DanielC_Ojeda)
+[Leonardo Cumaco](https://github.com/Coderlancce) | [@Coderlancce](https://twitter.com/Coderlancce)
 
