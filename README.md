@@ -1,1 +1,154 @@
-Hello here start proyect
+<p align="center">
+  <img width="409" height="128" src="https://www.holbertonschool.com/holberton-logo.png">
+</p>
+
+# Printf() implementation.
+
+This repository contains C program for **_printf()** function written as part of the **Low-level programming and Algorithm** project at **Holberton School**. The program is the implementation of C language function printf() which prints the formatted output.
+
+
+## Project overview
+
+### Compilation:
+
+All files will be compiled with gcc 4.8.4 using the flags:  -Wall -Werror -Wextra -pedantic
+
+    gcc -Wall -Werror -Wextra -pedantic *.c
+
+### Betty coding style:
+
+All files are written in C and follows the Betty coding style for Holberton School. For more detail, check this page:
+
+[Betty style documentation](https://github.com/holbertonschool/Betty/wiki)
+
+### Authorized functions and macros
+
+* write (man 2 write)
+* malloc (man 3 malloc)
+* free (man 3 free)
+* va_start (man 3 va_start)
+* va_end (man 3 va_end)
+* va_copy (man 3 va_copy)
+* va_arg (man 3 va_arg)
+* _putchar(char c)
+
+## Function prototypes
+
+All function prototypes used to compile _printf() are included in the header file **main.h**:
+*    int (*get_function(const char *format))(va_list);
+*    int _putchar(char c);
+*    int _printf(const char *format, ...);
+*    int print_s(va_list arg);
+*    int print_c(va_list arg);
+*    int print_pc(va_list arg);
+*    int print_d(va_list arg);
+*    int print_i(va_list arg);
+
+## File description
+
+* **_printf.c:** - contains the function _printf()
+* **_putchar.c:** - contains the function _putchar()
+* **man_3_printf:** - manual page for  _printf() function.
+* **structure.c** - contains the function get_func()
+* **structure_lists.c** - contains the functions print_char, print_str and print_pct for the case of printing character, string and '%', contains the function print_dec for the case of printing decimal and integer
+* **main.h** - contains all headers, prototypes and structure declaration
+
+## Function description
+
+**int _printf(const char \*format, ...)**
+
+This function produces output under the control of a *format string* that specifies how subsequent arguments (or arguments accessed via the variable-length argument of stdarg(3)) are converted for output.
+
+The **format string** is composed of zero or more directives:
+1. Ordinary characters that are copied unchanged to the output stream. (except %)
+2. Conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification starts with the character %, ends with a conversion specifier ( which is a letter).
+
+
+The **conversion specifier:**
+
+
+The conversion specifier is a letter that specifies the type of conversion to be applied. Our program includes the following conversion   specifiers:
+
+**d, i:**	  The int are a argument in decimal notation. This return the
+                decimal number, calculed the length of the digit and after
+                print digit for digit and return the complex num, and writing this
+                in the console.
+
+**c:**	   character to be provided for printing
+
+**s:**	...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
+
+**%:**	    A per cent sign '%' is written. No argument is converted.
+
+
+**Return value:**
+
+Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings)
+A negative 1 is returned if an output error is encountered.
+___
+
+**int (\*get_func(const char \*format))(va_list)**
+
+This function called by *_printf()* and checks for valid conversion specifier when it finds a '%' character. The *get_func function will check for the right conversion specifier. Upon valid specifier, it returns the corresponding function.
+___
+
+**int print_c(va_list arg)**
+
+This function gets a variadic argument and prints each character of char type.
+___
+
+**int print_s(va_list arg)**
+
+This function gets a variadic argument, traverse the string, and prints a character at a time. 
+___
+
+**int print_pc(va_list arg)**
+
+This function prints a per cent sign '%'.
+___
+
+**int print_i(va_list arg);**
+This function prints a per cent sign '%'.
+___
+
+**int print_d(va_list arg)**
+This function prints a per cent sign '%'.
+___
+
+**int _putchar(char c)**
+
+writes the character c to standard output
+___
+
+## Examples
+To print a character:
+
+           #include "main.h"
+
+           _printf("%c",
+                   'S');
+
+        To print a string:
+
+           #include "main.h"
+
+           char string[] = "Hello World!;
+
+           _printf("%s",
+                   string);
+
+        To print a integrer or double:
+
+           #include "main.h"
+
+           int day = 24, moth = 3, year = 2022;
+
+           _printf("The date is %i/%d/%i",
+                                day, moth, year);
+```
+
+## Author
+##### Leonardo Cumaco
+Holberton School, Cohort 17
+##### Edwin Gaviria
+Holberton School, Cohort 17
