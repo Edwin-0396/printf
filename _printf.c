@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 		{
 			count++;
 			if (format[count] != '%' && format[count] != 'd' && format[count] != 'i'
-			&& format[count] != 'c' && format[count] != 's')
+			&& format[count] != 'c' && format[count] != 's' && format[count] != 'b')
 			{
 				if (format[count - 1] == '%' && format[count] == '\0')
 					return (-1);
