@@ -88,8 +88,9 @@ The conversion specifier is a letter that specifies the type of conversion to be
 
 **Return value:**
 
-Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings)
-A negative 1 is returned if an output error is encountered.
+Upon successful return, these functions return the number of characters printed (excluding the null byte used to end output to strings).
+
+If you put the % and after of this the program see a space of a null byte ('\0'), the program return (-1).
 ___
 
 **int (\*get_func(const char \*format))(va_list)**
