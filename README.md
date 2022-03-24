@@ -2,7 +2,7 @@
   <img width="409" height="128" src="https://www.maizure.org/projects/printf/fig0.png">
 </p>
 
-# Printf() implementation.
+# 0x11. C - printf
 
 This repository contains C program for **_printf()** function written as part of the **Low-level programming and Algorithm** project at **Holberton School**. The program is the implementation of C language function printf() which prints the formatted output.
 
