@@ -1,0 +1,30 @@
+#include "main.h"
+
+/**
+ * print_b - print a integrer to binary
+ * @arg: pointer to argument
+ *
+ * Return: length of binary
+ */
+
+int print_b(va_list arg)
+{
+	int d[15];
+	int bin[15];
+	int i, m = 0;
+
+	d[0] = va_arg(arg, int);
+
+	for (i = 0; d[i] != 1; i++)
+	{
+		d[i + 1] = d[i] / 2;
+		bin[i] = d[i] % 2;
+		if(d[i + 1] == 1)
+			bin[i + 1] = 1;
+	}
+
+	for (m = i; m >= 0; m--)
+		_putchar(bin[m] + '0');
+
+	return (i);
+}
