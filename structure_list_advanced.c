@@ -9,8 +9,8 @@
 
 int print_b(va_list arg)
 {
-	int d[15];
-	int bin[15];
+	int d[100];
+	int bin[100];
 	int i, m = 0;
 	int store = 0;
 
