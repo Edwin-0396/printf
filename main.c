@@ -10,7 +10,6 @@
 int main(void)
 {
   printf("Test: %d\n", _printf("%b", 98));
-  printf("Real: %d\n", printf("%b", 98));
 	 
   return (0);
 }

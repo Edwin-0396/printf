@@ -12,6 +12,7 @@ int print_b(va_list arg)
 	int d[15];
 	int bin[15];
 	int i, m = 0;
+	int store = 0;
 
 	d[0] = va_arg(arg, int);
 
@@ -19,12 +20,12 @@ int print_b(va_list arg)
 	{
 		d[i + 1] = d[i] / 2;
 		bin[i] = d[i] % 2;
-		if(d[i + 1] == 1)
+		if (d[i + 1] == 1)
 			bin[i + 1] = 1;
 	}
 
 	for (m = i; m >= 0; m--)
-		_putchar(bin[m] + '0');
+		store = store + _putchar(bin[m] + '0');
 
-	return (i);
+	return (store);
 }
