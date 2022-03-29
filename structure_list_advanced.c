@@ -9,12 +9,12 @@
 
 int print_b(va_list arg)
 {
-	int d[100];
-	int bin[100];
+	long int d[100];
+	long int bin[100];
 	int i, m = 0;
 	int store = 0, v = 0;
 
-	d[0] = va_arg(arg, int);
+	d[0] = va_arg(arg, long int);
 
 	if(d[0] == 1)
 	{
